@@ -11,7 +11,10 @@ libcurl4-gnutls-dev:i386
 
 RUN mkdir -p /src/config && mkdir /src/steamcmd
 
+RUN adduser steam && su - steam
+
 WORKDIR /src/steamcmd
 
 RUN wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz && \
-tar -xvzf steamcmd_linux.tar.gz
+tar -xvzf steamcmd_linux.tar.gz && \
+rm -rf steamcmd_linux.tar.gz
