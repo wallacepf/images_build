@@ -9,9 +9,7 @@ lib32gcc1 \
 lib32stdc++6 \
 libcurl4-gnutls-dev:i386
 
-RUN mkdir -p /src/config && mkdir /src/steamcmd
-
-RUN adduser steam && su - steam
+RUN adduser steam && mkdir -p /src/config && mkdir /src/steamcmd && chown -R steam:steam /src && su - steam
 
 WORKDIR /src/steamcmd
 
