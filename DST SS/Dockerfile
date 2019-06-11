@@ -13,7 +13,7 @@ RUN ./steamcmd.sh +runscript ../config/server_dst.txt
 
 COPY Scripts/* /src/server_dst/bin/
 COPY cluster.ini /src/server_dst/config/DoNotStarveTogether/TrancaDSTServer
-COPY cluster_token.txt /src/server_dst/config/DoNotStarveTogether/TrancaDSTServer
+COPY cluster_token.txt /src/server_dst/config/DoNotStarveTogether/
 COPY Caves/* /src/server_dst/config/DoNotStarveTogether/TrancaDSTServer/Caves/
 COPY Master/* /src/server_dst/config/DoNotStarveTogether/TrancaDSTServer/Master/
 
