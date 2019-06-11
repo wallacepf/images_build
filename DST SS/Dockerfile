@@ -19,6 +19,6 @@ COPY Master/* /src/server_dst/config/DoNotStarveTogether/TrancaDSTServer/Master/
 
 EXPOSE 10999/udp
 
-ENTRYPOINT ["sh", "/src/server_dst/bin/run.sh"]
+# ENTRYPOINT ["sh", "/src/server_dst/bin/run.sh"]
 
 VOLUME [ "/src" ]
