@@ -5,6 +5,7 @@ LABEL maintainer="wallacepf@gmail.com"
 RUN dpkg --add-architecture i386 && \
 apt-get update && apt-get -y install \
 wget \
+nano \
 lib32gcc1 \
 lib32stdc++6 \
 libcurl4-gnutls-dev:i386
